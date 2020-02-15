@@ -1,3 +1,4 @@
+/* SASS Variables */
 body {
   background-color: #007f00;
   font-family: "Muli", sans-serif;
@@ -302,8 +303,32 @@ body {
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
+  .categories__title {
+    font-size: 16px;
+    padding-left: 32px;
+  }
+
   .carousel {
+    padding: 0;
     width: inherit;
+  }
+
+  .carousel-item {
+    transform: none;
+  }
+
+  .carousel-item:hover ~ .carousel-item {
+    transform: translate3d(40px, 0, 0);
+  }
+
+  .carousel__container:hover .carousel-item:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  #scroll-style::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
   }
 
   .login__container {
@@ -324,6 +349,19 @@ body {
 
   .footer a {
     padding-bottom: 5px;
+  }
+
+  .main {
+    height: 250px;
+  }
+
+  .main__title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .main > .input {
+    width: 85%;
   }
 }
 
