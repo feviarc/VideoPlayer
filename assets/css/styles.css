@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+.content {
+  background: linear-gradient(#007f00, #4caf50);
+}
+
 /* Header */
 .header {
   background-color: #007f00;
@@ -92,10 +96,6 @@ body {
 }
 
 /* Carousel */
-.slides {
-  background: linear-gradient(#007f00, #4caf50);
-}
-
 .categories__title {
   color: white;
   font-size: 25px;
@@ -321,6 +321,14 @@ body {
   text-decoration: underline;
 }
 
+/* 404 Page */
+.not-found {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 230px);
+}
+
 /* Mobile */
 @media only screen and (max-width: 600px) {
   .login__container {
@@ -387,6 +395,11 @@ body {
   .footer a {
     padding-bottom: 5px;
   }
+
+  .not-found {
+    min-height: calc(100vh - 175px);
+  }
 }
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
