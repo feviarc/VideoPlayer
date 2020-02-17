@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+.content {
+    background: linear-gradient(#007f00, #4caf50);
+}
+
 
 /* Header */
 
@@ -100,10 +104,6 @@ body {
 
 
 /* Carousel */
-
-.slides {
-    background: linear-gradient(#007f00, #4caf50);
-}
 
 .categories__title {
     color: white;
@@ -347,6 +347,15 @@ body {
 }
 
 
+/* 404 Page */
+
+.not-found {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 230px);
+}
+
 
 /* Mobile */
 
@@ -416,6 +425,10 @@ body {
 
     .footer a {
         padding-bottom: 5px;
+    }
+
+    .not-found {
+        min-height: calc(100vh - 175px);
     }
     
 }
