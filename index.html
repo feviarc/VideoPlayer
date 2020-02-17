@@ -11,10 +11,10 @@
     <body>
 
         <header class="header">
-            <img class="header__img" src="assets/img/logo.png" alt="Video Player Logo">
+            <img tabindex="0" class="header__img" src="assets/img/logo.png" alt="Video Player Logo">
             <div class="header__menu">
                 <div class="header__menu--profile">
-                    <img src="./assets/img/default-avatar.png" alt="User Avatar">
+                    <img tabindex="0" src="./assets/img/default-avatar.png" alt="User Avatar">
                 </div>
                 <ul>
                     <li><a href="/">Account</a></li>
@@ -26,63 +26,181 @@
         <section class="slides">
             <section class="main">
                 <h2 class="main__title">What do you want to see today?</h2>
-                <input class="input" type="search" placeholder="Search...">
+                <input aria-label="searchbox" class="input" type="search" placeholder="Type a word or phrase to search">
             </section>
             
-            <h2 class="categories__title">Favorites</h2>
+            <h2 class="categories__title">My List</h2>
     
             <section class="carousel" id="scroll-style">
                 <div class="carousel__container">
-    
+
                     <div class="carousel-item">
-                        <img class="carousel-item__img" src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?cs=srgb&dl=three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.jpg&fm=jpg" alt="People">
+                        <img class="carousel-item__img" src="https://www.publicdomainpictures.net/pictures/90000/nahled/space-galaxy-1401467040F0s.jpg" alt="Picture description">
                         <div class="carousel-item__details">
                             <div>
                                 <img src="./assets/img/play-icon.png" alt="Play button">
                                 <img src="./assets/img/plus-icon.png" alt="Add button">
                             </div>
-                            <p class="carousel-item__details--title">Título descriptivo</p>
-                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        
+                        <img class="carousel-item__img" src="https://www.jpl.nasa.gov/images/spitzer/20081208/b-20081208-browse.jpg" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
                     </div>
+
                     <div class="carousel-item">
-                        
+                        <img class="carousel-item__img" src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd36-1-iss048e002082.jpg?w=800&dpr=1&fit=default&crop=default&auto=format&fm=pjpg&q=75&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=c67a2107127bfefb7216d9cf5f5ff941" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
                     </div>
-                    
-                    <div class="carousel-item">
-                        
-                    </div>
-                    
-                    <div class="carousel-item">
-                        
-                    </div>
-                    
-                    <div class="carousel-item">
-                        
-                    </div>
-                    
-                    <div class="carousel-item">
-                        
-                    </div>
-                    
-                    <div class="carousel-item">
-                        
-                    </div>
-                    
-                    <div class="carousel-item">
-                        
-                    </div>
-                    
-                    <div class="carousel-item">
-                        
-                    </div>
-                                                
+
                 </div>
             </section>
+
+            <h2 class="categories__title">Trends</h2>
+    
+            <section class="carousel" id="scroll-style">
+                <div class="carousel__container">
+    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/NGC_3982_-_Hubble_space_telescope%2C_2003.jpg/838px-NGC_3982_-_Hubble_space_telescope%2C_2003.jpg" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTx8M2FOH3VNjmQz0qDrWFQzwQtmr2qUeSfVsRPZyUVCFY-ts5y" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://live.staticflickr.com/848/43569891502_8b77d5d92e_b.jpg" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Quadruple_Saturn_moon_transit_%28captured_by_the_Hubble_Space_Telescope%29.jpg/1024px-Quadruple_Saturn_moon_transit_%28captured_by_the_Hubble_Space_Telescope%29.jpg" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd36-1-pia00404.jpg?w=800&dpr=1&fit=default&crop=default&auto=format&fm=pjpg&q=75&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=4287f3aaa4993bd5f3d20fc88d8236a9" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://www.nasa.gov/images/content/644689main_pia15429-full.jpg" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://live.staticflickr.com/862/28763651697_055e58f6e5_b.jpg" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/A_binary_black_hole.jpg/1024px-A_binary_black_hole.jpg" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://p1.pxfuel.com/preview/63/786/335/astronomy-hubble-weltraumteleskop-universe-universe-nasa.jpg" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="https://p2.piqsels.com/preview/798/356/965/carina-nebula-space-gas-dust.jpg" alt="Picture Description">
+                        <div class="carousel-item__details">
+                            <div>
+                                <img src="./assets/img/play-icon.png" alt="Play button">
+                                <img src="./assets/img/plus-icon.png" alt="Add button">
+                            </div>
+                            <p class="carousel-item__details--title"><strong>Descriptive Title</strong></p>
+                            <p class="carousel-item__details--subtitle">2019 16+ 114 minutes</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
         </section>
 
         <footer class="footer">

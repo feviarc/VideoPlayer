@@ -104,11 +104,15 @@ body {
 }
 
 .carousel {
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   padding: 30px;
   position: relative;
   width: 95.5%;
+}
+
+.carousel:hover {
+  overflow-x: auto;
 }
 
 #scroll-style::-webkit-scrollbar-track {
@@ -166,16 +170,32 @@ body {
 }
 
 .carousel-item__details {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 50%);
+  bottom: 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
   font-size: 10px;
+  justify-content: flex-end;
+  left: 0;
   opacity: 0;
-  transition: 450ms opacity;
   padding: 10px;
   position: absolute;
-  top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
+  top: 0;
+  transition: 450ms opacity;
+}
+
+.carousel-item__details img {
+  height: 24px;
+}
+
+.carousel-item__details p {
+  margin-bottom: -6px;
+}
+
+.carousel-item__details p > strong {
+  font-size: 12px;
 }
 
 .carousel-item__details:hover {
@@ -303,14 +323,34 @@ body {
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
-  .categories__title {
-    font-size: 16px;
-    padding-left: 32px;
+  .login__container {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main {
+    height: 250px;
+  }
+
+  .main__title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .main > .input {
+    width: 85%;
   }
 
   .carousel {
     padding: 0;
     width: inherit;
+  }
+
+  .carousel:hover {
+    overflow-x: auto;
   }
 
   .carousel-item {
@@ -326,17 +366,14 @@ body {
     transform: scale(1.2);
   }
 
+  .categories__title {
+    font-size: 16px;
+    padding-left: 32px;
+  }
+
   #scroll-style::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-  }
-
-  .login__container {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-    width: 100%;
   }
 
   .footer {
@@ -349,19 +386,6 @@ body {
 
   .footer a {
     padding-bottom: 5px;
-  }
-
-  .main {
-    height: 250px;
-  }
-
-  .main__title {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .main > .input {
-    width: 85%;
   }
 }
 
